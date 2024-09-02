@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { RootState, AppDispatch } from '../../store/store';
 import { toggleCheckbox, updateCompany } from '../../store/companySlice';
 import { startEditing, nameChange, addressChange, cancelEditing } from '../../store/editingSlice';
+import { EditBtn } from '../index';
 import styles from './NewLabel.module.scss';
-import EditBtn from '../editBtn/editBtn';
 
 interface NewLabelProps {
   id: string;

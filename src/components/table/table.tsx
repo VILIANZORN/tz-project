@@ -1,11 +1,8 @@
 import { FC } from 'react';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../store/store';
-import { NewLabel } from '../index';
-import SelectAllButton from '../selectAllButton/selectAllButton';
-import DeleteSelectedButton from '../deleteSelectedButton/deleteSelectedButton';
-import NewCompanyForm from '../newCompanyForm/newCompanyForm';
-import styles from './Table.module.scss';
+import { NewLabel, SelectAllButton, DeleteSelectedButton, NewCompanyForm } from '../index';
+import styles from './table.module.scss';
 
 const Table: FC = () => {
   const companies = useSelector((state: RootState) => state.companies);
