@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import styles from './EditBtn.module.scss';
+import styles from './editBtn.module.scss';
 
 interface EditBtnProps {
   isEditing: boolean;

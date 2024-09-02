@@ -4,7 +4,7 @@ import { RootState, AppDispatch } from '../../store/store';
 import { toggleCheckbox, updateCompany } from '../../store/companySlice';
 import { startEditing, nameChange, addressChange, cancelEditing } from '../../store/editingSlice';
 import { EditBtn } from '../index';
-import styles from './NewLabel.module.scss';
+import styles from './newLabel.module.scss';
 
 interface NewLabelProps {
   id: string;
