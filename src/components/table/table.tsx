@@ -1,0 +1,43 @@
+import { FC } from 'react';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../store/store';
+import { NewLabel } from '../index';
+import SelectAllButton from '../selectAllButton/selectAllButton';
+import DeleteSelectedButton from '../deleteSelectedButton/deleteSelectedButton';
+import NewCompanyForm from '../newCompanyForm/newCompanyForm';
+import styles from './Table.module.scss';
+
+const Table: FC = () => {
+  const companies = useSelector((state: RootState) => state.companies);
+
+  return (
+    <div>
+      <NewCompanyForm />
+      <table className={styles.table}>
+        <thead className={styles.thead}>
+          <tr>
+            <th className={styles.actionsHeader}>
+              <SelectAllButton />
+              <DeleteSelectedButton />
+            </th>
+            <th>Название компании</th>
+            <th>Адрес</th>
+          </tr>
+        </thead>
+        <tbody className={styles.tbody}>
+          {companies.map(company => (
+            <NewLabel
+              key={company.id}
+              id={company.id}
+              name={company.name}
+              address={company.address}
+              isChecked={company.isChecked}
+            />
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+};
+
+export default Table;

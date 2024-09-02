@@ -1,0 +1,180 @@
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+input[type='checkbox'] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.customCheckbox {
+  width: 18px;
+  height: 18px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  border: 2px solid #ddd;
+  display: inline-block;
+  position: relative;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+input[type='checkbox']:checked + .customCheckbox {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+.customCheckbox:after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+input[type='checkbox']:checked + .customCheckbox:after {
+  opacity: 1;
+}
+
+.editInput {
+  width: 100%;
+  padding: 4px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.saveButton,
+.cancelButton,
+.editButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+.saveButton:hover,
+.cancelButton:hover,
+.editButton:hover {
+  background-color: #0056b3;
+}
+
+.editInput {
+    width: 100%;
+    padding: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .saveButton,
+  .cancelButton,
+  .editButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 4px;
+  }
+  
+  .saveButton:hover,
+  .cancelButton:hover,
+  .editButton:hover {
+    background-color: #0056b3;
+  }
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+input[type='checkbox'] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.customCheckbox {
+  width: 18px;
+  height: 18px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  border: 2px solid #ddd;
+  display: inline-block;
+  position: relative;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+input[type='checkbox']:checked + .customCheckbox {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+.customCheckbox:after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+input[type='checkbox']:checked + .customCheckbox:after {
+  opacity: 1;
+}
+
+.editInput {
+  width: 100%;
+  padding: 4px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.saveButton,
+.cancelButton,
+.editButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+.saveButton:hover,
+.cancelButton:hover,
+.editButton:hover {
+  background-color: #0056b3;
+}
+
+.checkedRow {
+  background-color: #b2ffb2;
+}
